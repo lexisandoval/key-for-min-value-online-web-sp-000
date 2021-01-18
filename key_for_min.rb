@@ -3,7 +3,11 @@
 
 def key_for_min_value(name_hash)
   minimum = ""
-  temp1 = 0
+
+  if name_hash == []
+    return nil
+  end
+  
   name_hash.each do |key, value|
     if value < temp1
       temp1 = value
